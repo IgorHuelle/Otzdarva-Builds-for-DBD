@@ -6,7 +6,5 @@
     <title>OTZ BUILDS FOR KILLER/SURVIVIOR</title>
 </head>
 <body>
-    dsds
-    JARO PEDAŁ CWEL HEHE
 </body>
 </html>

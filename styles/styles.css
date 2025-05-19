@@ -1,0 +1,155 @@
+@font-face {
+    font-family: 'Lexend';
+    src: url(../fonts/Lexend.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    background-color: hsl(0, 0%, 12%);
+    background-image: url(../content/imgs/dbd-background.jpg);
+    background-size: contain;
+
+    font-family: 'Lexend', sans-serif;
+
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+img {
+    display: block;
+    height: 100%;
+}
+a {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+ul, ol {
+    list-style: none;
+}
+
+#hdr {
+    justify-items: center;
+    padding-block: 16px;
+}
+#hdr h1 {
+    color: white;
+    padding-left: 80px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+#otz {
+    color: hsl(347, 66%, 49%);
+    position: relative;
+}
+#otz::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: calc(100% + 8px);
+    translate: 0 -50%;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    background-image: url(../content/favicon.png);
+    background-size: contain;
+}
+#hdr #logo {
+    height: 60px;
+    margin-bottom: 8px;
+}
+#hdr p {
+    color: white;
+}
+#hdr p span {
+    color: hsl(27, 77%, 88%);
+}
+
+#nav-bar {
+    position: fixed;
+    top: 8px;
+    right: 8px;
+}
+#tabs-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+#tabs-list li {
+    border-radius: 8px;
+}
+#tabs-list li a {
+    position: relative;
+    text-decoration: none;
+    display: flex;
+    font-size: 1.3rem;
+    padding: 4px 8px;
+}
+#tabs-list li a img {
+    align-self: center;
+    height: 1.8rem;
+    margin-right: 4px;
+}
+
+#main-content {
+
+}
+
+#ftr {
+    background-color: hsl(0, 0%, 10%);
+    padding-block: 32px;
+}
+#ftr p {
+    color: white;
+    text-align: center;
+    margin-bottom: 8px;
+}
+#ftr p a {
+    display: inline;
+    color: red;
+}
+#socials-list {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+#socials-list i {
+    font-size: 2rem;
+}
+
+.killer {
+    display: flex;
+}
+.killer h2 {
+    color: white;
+    text-align: center;
+}
+.killer .perks {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.killer .perks-list > div {
+    display: flex;
+}
+.killer .perks-list p {
+    color: white;
+}
+
+.perk {
+    background-image: url(../content/perk-background-dark.png);
+    background-size: contain;
+    height: 100px;
+    aspect-ratio: 1 / 1;
+
+    align-content: center;
+    justify-items: center;
+}
+.perk .perk-icon {
+    height: 90%;
+    aspect-ratio: 1 / 1;
+}
